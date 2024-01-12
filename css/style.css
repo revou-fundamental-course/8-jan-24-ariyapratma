@@ -45,6 +45,7 @@ div h2 {
     padding: 40px;
 }
 
+
 .img {
     display: block;
     margin-left: auto;
@@ -53,9 +54,25 @@ div h2 {
     flex: content;
 }
 
+.p1  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: left;
+}
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
 .inputSection {
+    text-align: center;
     display: flex;
     flex-direction: column;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #3A4D39;
 
 }
 
