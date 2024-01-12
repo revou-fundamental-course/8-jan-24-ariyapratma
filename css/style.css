@@ -10,14 +10,9 @@ header h1 {
     color: #3A4D39;
 }
 
-header h4 {
-    margin-top: 32px;
-    color: #3A4D39;
-}
-
 header p {
     margin-top: -10px;
-    font-size: x-small;
+    font-size: small;
     color: #739072;
     margin-bottom: 20px;
 }
