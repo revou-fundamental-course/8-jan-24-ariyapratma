@@ -16,4 +16,5 @@ function calculateSquare() {
 
     var resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `<p>Luas Persegi: ${area}</p><p>Keliling Persegi: ${perimeter}</p>`;
+
 }

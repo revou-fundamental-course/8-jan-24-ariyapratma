@@ -75,6 +75,7 @@ div h2 {
 
 .inputSection {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -91,22 +92,69 @@ div h2 {
     color: #86B6F6;
 }
 
+
+.integer {
+    background-color: #176B87;
+}
 #sideLength {
+    position: relative;
     border-radius: 5px,2%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
     width: 1570px;
-    flex-direction: column;
     padding: 10px;
     box-sizing: border-box;
+    height: 50px;
+    width: 1550px;
+    margin: 05px;
+    outline: none;
+    border-radius: 10px;
+    background: none;
+    box-shadow: -3px -5px 10px white,3px 5px 10px rgba(114, 113, 113, 0.4);
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    color: #176B87;
 
 }
 
-.buttonHitung {
+#calculateButton{
+    height: 30px;
+    width: 110px;
+    margin: 05px;
+    outline: none;
+    border-radius: 10px;
+    background: none;
+    box-shadow: -3px -5px 10px white,3px 5px 10px rgba(114, 113, 113, 0.4);
+    border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    padding: 10px;
+    justify-content: center;
     color: #176B87;
     cursor: pointer;
     
+}
+
+
+#calculateButton:hover {
+    box-shadow: -3px -5px 10px white,3px 5px 10px rgba(114, 113, 113, 0.4) ;
+}
+
+#calculateButton:active {
+    color: #86B6F6;
+}
+
+#resetButton {
+    height: 30px;
+    width: 110px;
+    margin: 05px;
+    outline: none;
+    border-radius: 10px;
+    background: none;
+    box-shadow: -3px -5px 10px white,3px 5px 10px rgba(114, 113, 113, 0.4);
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    color: #176B87;
+    cursor: pointer;
+
 }
