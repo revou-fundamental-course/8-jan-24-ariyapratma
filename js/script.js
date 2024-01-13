@@ -17,4 +17,11 @@ function calculateSquare() {
     var resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `<p>Luas Persegi: ${area}</p><p>Keliling Persegi: ${perimeter}</p>`;
 
+   // Menambahkan event listener untuk tombol reset
+   resetButton.addEventListener("click", function () {
+    // Mereset nilai input dan hasil perhitungan
+    sideLength.value = "";
+    resultDiv.innerHTML = "";
+});
+
 }
