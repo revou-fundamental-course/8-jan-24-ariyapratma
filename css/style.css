@@ -1,44 +1,50 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
-    color: #3A4D39;
+    color: #B4D4FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: -10px;
     font-size: small;
-    color: #739072;
+    color: #176B87;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 div h3 {
-    background-color: #3A4D39;
+    background-color: #B4D4FF;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     border-radius: 2px;
-    font-size: small;
+    font-size: medium;
     flex: content;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 div h4 {
-    color: #3A4D39;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: small;
+    color: #86B6F6;
 }
 
 div h2 {
-    background-color: #3A4D39;
+    background-color: #B4D4FF;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
     text-align: center;
     flex-direction: column;
@@ -52,56 +58,60 @@ div h2 {
     margin-right: auto;
     text-align: center;
     flex: content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .p1  {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
     text-align: left;
 }
 
 .p2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
     text-align: center;
 }
 
 .inputSection {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
     font-size: xx-large;
     font-weight: bold;
-    color: #3A4D39;
+    color: #86B6F6;
 
-}
-
-#squareSide {
-    outline: none;
-    border-radius: 8px;
-    border: solid #739072;
-    padding: 10px;
-}
-
-#squareSide:focus {
-    border: solid #3A4D39;
 }
 
 .hl1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-small;
     text-align: center;
-    color: #3A4D39;
+    color: #86B6F6;
 }
 
 #sideLength {
-    width: 1550px;
+    border-radius: 5px,2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    width: 1570px;
     flex-direction: column;
     padding: 10px;
+    box-sizing: border-box;
 
 }
 
 .buttonHitung {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    padding: 10px;
+    color: #176B87;
+    cursor: pointer;
+    
 }
+
+.calculateButton:active {
+    
+}
+
