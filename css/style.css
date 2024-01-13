@@ -10,15 +10,17 @@ header {
 header h1 {
     color: #B4D4FF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    margin-bottom: 10px;
     
 }
 
 header p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: -10px;
-    font-size: small;
+    margin-top: 10px;
+    font-size: x-small;
     color: #176B87;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -28,16 +30,16 @@ div h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     border-radius: 2px;
-    font-size: medium;
+    font-size: small;
     flex: content;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
 div h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: small;
+    font-size: x-small;
     color: #86B6F6;
 }
 
@@ -45,32 +47,46 @@ div h2 {
     background-color: #B4D4FF;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
 }
 
-
-.img {
+.container img{
+    width: 100%;
+    height: auto;
+    max-width: 80px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    flex: content;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
 }
+
 
 .p1  {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: x-small;
     text-align: left;
 }
 
 .p2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: x-small;
     text-align: center;
+}
+
+.p3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+    text-align: left;
+}
+
+.p4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #B4D4FF;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .inputSection {
@@ -83,19 +99,6 @@ div h2 {
     font-weight: bold;
     color: #86B6F6;
 
-}
-
-.hl1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-small;
-    text-align: center;
-    color: #86B6F6;
-}
-
-.container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #sideLength {
@@ -121,6 +124,12 @@ div h2 {
 
 }
 
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container2 {
     display: flex;
     justify-content: center;
@@ -143,7 +152,6 @@ div h2 {
     
 }
 
-
 #calculateButton:hover {
     box-shadow: -3px -5px 10px white,3px 5px 10px rgba(114, 113, 113, 0.4) ;
     display: block;
@@ -152,7 +160,6 @@ div h2 {
 #calculateButton:active {
     color: #86B6F6;
 }
-
 
 .container3 {
     display: flex;
@@ -172,5 +179,14 @@ div h2 {
     justify-content: center;
     color: #176B87;
     cursor: pointer;
+}
 
+#result {
+    margin-top: 20px;
+}
+
+#result p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+    margin-bottom: 10px;
 }
