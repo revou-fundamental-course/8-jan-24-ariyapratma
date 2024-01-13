@@ -92,11 +92,14 @@ div h2 {
     color: #86B6F6;
 }
 
-
-.integer {
-    background-color: #176B87;
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #sideLength {
+    text-align: center;
     position: relative;
     border-radius: 5px,2%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,7 +108,7 @@ div h2 {
     padding: 10px;
     box-sizing: border-box;
     height: 50px;
-    width: 1550px;
+    width: 500px;
     margin: 05px;
     outline: none;
     border-radius: 10px;
@@ -116,6 +119,12 @@ div h2 {
     justify-content: center;
     color: #176B87;
 
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #calculateButton{
@@ -137,12 +146,19 @@ div h2 {
 
 #calculateButton:hover {
     box-shadow: -3px -5px 10px white,3px 5px 10px rgba(114, 113, 113, 0.4) ;
+    display: block;
 }
 
 #calculateButton:active {
     color: #86B6F6;
 }
 
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #resetButton {
     height: 30px;
     width: 110px;
