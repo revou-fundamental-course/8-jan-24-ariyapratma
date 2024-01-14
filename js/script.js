@@ -1,27 +1,31 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var calculateButton = document.getElementById('calculateButton');
-    calculateButton.addEventListener('click', calculateSquare);
-});
+// Your existing script.js logic
 
-function calculateSquare() {
-    var sideLength = parseFloat(document.getElementById('sideLength').value);
+function calculateLuasPersegi() {
+    // Add logic for calculating Luas Persegi here
+    var sisiValue = document.getElementById('sisi').value;
 
-    if (isNaN(sideLength)) {
-        alert('Masukkan nilai sisi yang valid.');
-        return;
-    }
+    // Example: Display the result in the result-luas-persegi div
+    document.getElementById('result-luas-persegi').innerText = 'Luas Persegi: ' + (sisiValue * sisiValue);
+    document.getElementById('result-luas-persegi').style.display = 'block';
+}
 
-    var area = sideLength * sideLength;
-    var perimeter = 4 * sideLength;
+function resetLuasPersegi() {
+    // Add logic to reset Luas Persegi form and result here
+    document.getElementById('luas-persegi').reset();
+    document.getElementById('result-luas-persegi').style.display = 'none';
+}
 
-    var resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<p>Luas Persegi: ${area}</p><p>Keliling Persegi: ${perimeter}</p>`;
+function calculateKelilingPersegi() {
+    // Add logic for calculating Keliling Persegi here
+    var sisiValue = document.getElementById('sisi').value;
 
-   // Menambahkan event listener untuk tombol reset
-   resetButton.addEventListener("click", function () {
-    // Mereset nilai input dan hasil perhitungan
-    sideLength.value = "";
-    resultDiv.innerHTML = "";
-});
+    // Example: Display the result in the result-keliling-persegi div
+    document.getElementById('result-keliling-persegi').innerText = 'Keliling Persegi: ' + (4 * sisiValue);
+    document.getElementById('result-keliling-persegi').style.display = 'block';
+}
 
+function resetKelilingPersegi() {
+    // Add logic to reset Keliling Persegi form and result here
+    document.getElementById('keliling-persegi').reset();
+    document.getElementById('result-keliling-persegi').style.display = 'none';
 }

@@ -6,40 +6,72 @@
     <title>Katik Persegi</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
+    <style>
+        /* Your CSS styles here */
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Katik</h1>
         <p>Hai Sobat, Selamat datang di Katik :]</p>
-        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun dan keliling bangun datar</p>
+        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
     </header>
-    <div>
-        <h3>Persegi</h3>
-        <h4> P. Panjang</h4>
-        <h2>Luas Persegi</h2>
-    </div>
-        <div class="container">        
-            <img src="https://katik.azurewebsites.net/images/persegi.jpg" alt="">
-            <p class="p1">Rumus Luas Persegi yaitu : </p>
-            <p class="p2"><b>L = S x S</b>
-            <p class="p3">Di mana : <br>
-            L = Luas <br>
-            S = Sisi </p>
-    </div>
-            <div class="p4"> <p>Hitung Luas Persegi</p>
+
+    <div class="tab-content">
+        <div id="persegi" class="tab-pane fade in active">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2>Luas Persegi</h2>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://katik.azurewebsites.net/images/persegi.jpg" alt="Luas Persegi">
+                            <p class="text-left">Rumus Luas Persegi yaitu :</p>
+                            <p><strong>L = S x S</strong></p>
+                            <p class="text-left">Di mana :<br/>L = Luas<br/>S = Sisi</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>Hitung Luas Persegi</h3>
+                            <form id="luas-persegi" onsubmit="calculateLuasPersegi(); return false;">
+                                <input class="form-control" id="sisi" name="sisi" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
+                                <div id="loading-luas-persegi" class="text-center" style="display:none;"><br /><img src="images/loading.gif" alt="loading..." /></div>																													
+                                <div id="result-luas-persegi" class="text-left" style="display:none;"></div>											
+                                <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
+                                <p class="text-right">
+                                    <input type="reset" class="btn btn-warning" value="Reset" onclick="resetLuasPersegi();">
+                                </p>
+                            </form>											
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col-sm-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2>Keliling Persegi</h2>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://katik.azurewebsites.net/images/persegi.jpg" alt="Keliling Persegi">
+                            <p class="text-left">Rumus Keliling Persegi yaitu :</p>
+                            <p><strong>K = 4 x S</strong></p>
+                            <p class="text-left">Di mana :<br/>K = Keliling<br/>S = Sisi</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>Hitung Keliling Persegi</h3>
+                            <form id="keliling-persegi" onsubmit="calculateKelilingPersegi(); return false;">
+                                <input class="form-control" id="sisiKeliling" name="sisiKeliling" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
+                                <div id="loading-keliling-persegi" class="text-center" style="display:none;"><br /><img src="images/loading.gif" alt="loading..." /></div>																													
+                                <div id="result-keliling-persegi" class="text-left" style="display:none;"></div>											
+                                <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
+                                <p class="text-right">
+                                    <input type="reset" class="btn btn-warning" value="Reset" onclick="resetKelilingPersegi();">
+                                </p>
+                            </form>
+                        </div>                        
+                    </div>
+                </div>
             </div>
-                <div>
-                    <label for="sideLength"> </label>
-                    <div class="container1">
-                    <input type="integer" id="sideLength" placeholder="Masukkan nilai sisi"></div><br>
-                </div>
-                    <div class="container2">
-                    <Button id="calculateButton">Hitung</Button>
-                </div>
-                <div class="container3">
-                    <button id="resetButton">Reset</button>
-                </div>
-                    <div id="result"></div>
-            </div>
+        </div>
+    </div>
 </body>
 </html>
