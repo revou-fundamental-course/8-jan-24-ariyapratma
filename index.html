@@ -6,13 +6,12 @@
     <title>Katik Persegi</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Welcome to Katik</h1>
         <p>Hai Sobat, Selamat datang di Katik :]</p>
-        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
     </header>
     <div class="tab-content">
         <div id="persegi" class="tab-pane fade in active">
@@ -32,7 +31,7 @@
                             <h3>Hitung Luas Persegi</h3>
                             <form id="luas-persegi-form" onsubmit="calculateLuasPersegi(); return false;">
                                 <input class="form-control" id="sisi" name="sisi" onblur="extractNumber(this, 3, true);" onkeyup="extractNumber(this, 3, true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
-                                <div id="loading-luas-persegi" class="text-center" style="display:none;"><br /><img src="images/loading.gif" alt="loading..." /></div>
+                                <div id="loading-luas-persegi" class="text-center" style="display:none;"><br /></div>
                                 <div id="result-luas-persegi" class="text-left" style="display:none;"></div>
                                 <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
                                 <p class="text-right">
@@ -47,6 +46,7 @@
                         <div class="panel-heading">
                             <h2>Keliling Persegi</h2>
                         </div>
+                        <br>
                         <div class="panel-body">
                             <img src="https://katik.azurewebsites.net/images/persegi.jpg" alt="Keliling Persegi">
                             <p class="text-left">Rumus Keliling Persegi yaitu :</p>
@@ -56,7 +56,7 @@
                                 <h3>Hitung Keliling Persegi</h3>
                                 <form id="keliling-persegi-form" onsubmit="calculateKelilingPersegi(); return false;">
                                     <input class="form-control" id="sisiKeliling" name="sisiKeliling" onblur="extractNumber(this, 3, true);" onkeyup="extractNumber(this, 3, true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
-                                    <div id="loading-keliling-persegi" class="text-center" style="display:none;"><br /><img src="images/loading.gif" alt="loading..." /></div>
+                                    <div id="loading-keliling-persegi" class="text-center" style="display:none;"><br /></div>
                                     <div id="result-keliling-persegi" class="text-left" style="display:none;"></div>
                                     <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
                                     <p class="text-right">
