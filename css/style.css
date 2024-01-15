@@ -64,8 +64,22 @@ div.panel-heading,
 }
 
 .panel-body {
+    flex: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+.panel-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
 
 img {
     max-width: 100%;
@@ -76,6 +90,11 @@ img {
 
 .text-left {
     text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+
+.text-left-center {
+    text-align: center;
     font-family: "Poppins", sans-serif;
 }
 
