@@ -1,5 +1,3 @@
-// Your existing script.js logic
-
 function calculateLuasPersegi() {
     var sisiValue = document.getElementById('sisi').value;
     document.getElementById('result-luas-persegi').innerText = 'Luas Persegi: ' + (sisiValue * sisiValue);
