@@ -1,7 +1,5 @@
 # Welcome to Katik
 
-![Katik Logo]("https://katik.azurewebsites.net/images/katik-logo.png)
-
 Hey there! Welcome to Katik 🚀
 
 Katik is a simple web application designed to make calculating the area and perimeter of geometric shapes a breeze.
