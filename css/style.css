@@ -3,8 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 header {
@@ -76,7 +74,6 @@ div.panel-heading,
     justify-content: center;
 }
 
-
 .panel-body img {
     max-width: 100%;
     height: auto;
@@ -91,7 +88,6 @@ img {
     margin-bottom: 15px;
 }
 
-
 .text-left {
     text-align: left;
     font-family: "Poppins", sans-serif;
@@ -102,7 +98,6 @@ img {
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
-
 
 .panel-footer h3 {
     background-color: #337ab7;
